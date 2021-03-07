@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            /* way1:position + top +transform
+            .wrapper{
+                position: relative;
+                background-color: rgb(236, 168, 78);
+                width: 300px;
+                height: 300px;
+            }
+            .box{
+                position: absolute;
+                background-color: red;
+                width: 50px;
+                height: 50px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            } */
+            /* way2:position+top+margin
+            .wrapper{
+                position: relative;
+                background-color: rgb(236, 168, 78);
+                width: 300px;
+                height: 300px;
+            }
+            .box{
+                position: absolute;
+                background-color: red;
+                width: 50px;
+                height: 50px;
+                top: 50%;
+                left: 50%;
+                margin: -25px 0 0 -25px;
+            } */
+            /*way3:display*/
+            .wrapper{
+                background-color: rgb(236, 168, 78);
+                width: 300px;
+                height: 300px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box{
+                background-color: red;
+                width: 50px;
+                height: 50px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            .box{
+
+                background-color: green;
+            }
+            .left{
+                width: 450px;
+                height: 100px;
+                background-color: indianred;
+                float: left;
+                
+            }
+            .right{
+                width: 200px;
+                height: 200px;
+                background-color: khaki;
+               
+            }
+            .right2{
+                width: 150px;
+                height:150px;
+                background-color:lightblue;
+                float:left;             
+            }
+            .clearfloat:after{
+                display: block;
+                content:".";
+                clear: both;
+
+            }
+            .blankDiv {
+                clear: both; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="left">float</div>
+            <div class="right"></div>
+            <div class="blankDiv"></div>
+           
+            
+                 
+        </div>
+    </body>
+
+</html>
